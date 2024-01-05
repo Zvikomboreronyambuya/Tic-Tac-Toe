@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="centerHeader">
+            <h2>Tic Tac Toe</h2>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="select" id="select">
+                <h3>Press Start to begin</h3>
+            </div>
+            <div class="strt">
+                <input id="start" type="button" onclick="toggleHide()" value="Start">
+            </div>
+            <div class="gameboard">
+                <div class="field" data-index="0"></div>
+                <div class="field" data-index="1"></div>
+                <div class="field" data-index="2"></div>
+                <div class="field" data-index="3"></div>
+                <div class="field" data-index="4"></div>
+                <div class="field" data-index="5"></div>
+                <div class="field" data-index="6"></div>
+                <div class="field" data-index="7"></div>
+                <div class="field" data-index="8"></div>              
+            </div>
+            <div id="status" class="status">Player X's turn</div>
+            <div class="rst">
+                <input id="reset" type="button" value="Reset">
+            </div>
+        </div>
+    </main>
+    <footer>
+        &#169; Copyright, Owen Nyambuya, 2024
+    </footer>
+</body>
+</html>
